@@ -1,3 +1,14 @@
+## Output
+
+| Column                            | Description                                                  |
+| --------------------------------- | ------------------------------------------------------------ |
+| Matched Sequence                  | The subsequence of the input sequence that matched a sequence in the human genome. This length will be the same as the window length requested |
+| Index in Input Sequence (0-based) | The index where the matched sequence can be found in the input sequence |
+| Entry                             | The entry in the human proteome where the match was found (this corresponds to the "Entry name" column in the Human_Proteome_20K_proteins.csv file, sans the '_HUMAN' suffix) |
+| Index in Entry Sequence (0-based) | The index where the matched sequence can be found in the 'Sequence' column of the entry in the Human_Proteome_20K_proteins.csv file |
+
+
+
 ## Environment Install Instructions
 
 #### 1. Install Python
