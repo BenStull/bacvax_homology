@@ -82,7 +82,7 @@ if len(results) > 0 and not outputfile==None:
     print(f"Writing results to {os.path.abspath(outputfile)}...")
     if os.path.exists(outputfile):
         os.remove(outputfile)
-    with open(outputfile, 'w') as csvfile:
+    with open(outputfile, 'w', newline='') as csvfile:
         writer=csv.DictWriter(csvfile, fieldnames=['Matched Sequence', 'Index in Input Sequence (0-based)', 'Entry', 'Index in Entry Sequence (0-based)'])
         writer.writeheader()
         for a_result in results:
